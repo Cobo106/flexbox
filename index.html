@@ -6,10 +6,10 @@
 <style>
 	.flex-container{
 		display: flex;
-		background-color: aquamarine;
+		background-color: red;
 	}
 	.flex-container >div {
-		background-color: chartreuse;
+		background-color:#FFFFFF;
 		margin: 10px;
 		padding:20px;
 		font-size:20px;
@@ -39,12 +39,16 @@
 	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 	<script>
-	$$$( function() {
+	$( function() {
     $( "#accordion" ).accordion();
   } );
 		  $( function() {
     $( "#dogs" ).tabs();
   } );
+		$("button").click(function(){
+			$("p").hide();
+	
+		});
 	</script>
 	</head>
 
@@ -67,7 +71,13 @@
 			<div>stack 4</div>
 		</div>
 	</div>	
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum dolore, saepe, odit repellendus temporibus minus vitae repellat error dolores commodi cupiditate dicta mollitia aliquid eos beatae earum ipsa est maiores?</p>
+		
+		
+		<br>
+		
+		<button> click here</button>
+		<br>
+		<br>
 	<div class="flex-container">
 		<div class="section_L">more meh</div>
 			<div class="stack section_R">
@@ -86,7 +96,8 @@
             amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
             odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate. </p>
         </div>
-		<h3 class="ui-accordion-header ui-corner-top ui-state-default ui-accordion-icons ui-accordion-header-collapsed ui-corner-all" role="tab" id="ui-id-3" aria-controls="ui-id-4" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Section 2</h3>
+		<h3 class="ui-accordion-header ui-corner-top ui-state-default ui-accordion-icons ui-accordion-header-collapsed ui-corner-all" role="tab" id="ui-id-3" aria-controls="ui-id-4" aria-selected="false" aria-expanded="false" tabindex="-1">
+			<span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Section 2</h3>
 			<div class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content ui-accordion-content-active" id="ui-id-4" aria-labelledby="ui-id-3" role="tabpanel" aria-hidden="false" style="height: 409.125px;">
           <p> Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
             purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor

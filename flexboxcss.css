@@ -41,3 +41,31 @@
     font-weight: bold;
     color: #2e6e9e;
 }
+.flex-container{
+		display: flex;
+		background-color: red;
+	}
+	.flex-container >div {
+		background-color:#FFFFFF;
+		margin: 10px;
+		padding:20px;
+		font-size:20px;
+	}
+	.stack> div {
+		flex-direction: column;
+		padding:20px;
+	}
+	
+	#container {
+		width: 800px;
+		margin: 0 auto;
+	}
+	.section_L {
+		flex-grow: 3;
+	}
+	.ui-tabs .ui-tabs-nav{
+		font-size:10px;
+	}
+	.section_R{
+		flex-grow:2;
+	}
